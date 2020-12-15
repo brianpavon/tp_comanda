@@ -1,0 +1,33 @@
+socio1 : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJzb2NpbzEiLCJjbGF2ZSI6InNvY2lvMWFkbWluIiwiaWQiOjEsInRpcG8iOiJzb2NpbyJ9.6uUsHf7iRCeBQ2Xh-FX0hDZH5T_MJqfH-xCH0ypABIo
+
+
+mozo: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhbGZyZWQiLCJjbGF2ZSI6Im1vem9tYWVzdHJvIiwiaWQiOjcsInRpcG8iOiJtb3pvIn0.Zyx3RAdXL5-a3kaLPPzytlPbwwKzLN07hB-ZgNKQ3RY
+
+cocinero1: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJjb2NpbmVybyIsImNsYXZlIjoiY29jaW5lcm9waW9sYSIsImlkIjo0LCJ0aXBvIjoiY29jaW5lcm8ifQ.s-xrcakEEaXp4-WB38HIPu5dmyC3zXnZf63zMlLv5iY
+
+bartender1: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJiYXJ0ZW5kZXIiLCJjbGF2ZSI6ImJhcm1hbjEwIiwiaWQiOjUsInRpcG8iOiJiYXJ0ZW5kZXIifQ.uWp2wgOfPJloevvCPXK0M0C0kjymW5ngZu6qB4C7W1c
+
+cervecero1: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJjZXJ2ZWNlcm8iLCJjbGF2ZSI6ImR1ZmZtYW4iLCJpZCI6NiwidGlwbyI6ImNlcnZlY2VybyJ9.t9-b6TRvIvPVWKQn5Vx37BT1ypwhvExh7Fvt3vmQwpE
+
+
+---
+password hosting: Anita_128
+sito: tpcomandabriananpavon
+----
+
+
+servidor: files.000webhost.com
+usuario servidor: tpcomandabrianpavon
+contraseña como la otra.
+puerto 21
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+nombre base de datos: tpComanda ///id15683738_tpcomanda
+nombre de usuario de la base de datos: pavonbrian ////id15683738_pavonbrian
+constraseña bd: ]2bgd??{v+_t{Afd
+
+
+URL: https://tpcomandabrianpavon.000webhostapp.com/public
+
+
+
