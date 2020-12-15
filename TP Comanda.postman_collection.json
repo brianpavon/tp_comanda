@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "f358c829-c7f1-40fa-97bb-3d75d7c53313",
+		"name": "TP Comanda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "mozo",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "mozomaestro1",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "mozo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/registro",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"registro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "cervecero",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "duffman",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/login",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Tomar Pedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhbGZyZWQiLCJjbGF2ZSI6Im1vem9tYWVzdHJvIiwiaWQiOjcsInRpcG8iOiJtb3pvIn0.Zyx3RAdXL5-a3kaLPPzytlPbwwKzLN07hB-ZgNKQ3RY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pedidos_mesa\":\r\n    [\r\n        {        \r\n            \"nombre_cliente\": \"Ofe\",\r\n            \"pedido_cliente\":\"asado,fernet\"\r\n        },\r\n        {\r\n            \"nombre_cliente\": \"gladys\",\r\n            \"pedido_cliente\":\"matambre,champagne,flan,ipa\"\r\n        }\r\n    ]\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/pedidos",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Preparacion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJiYXJ0ZW5kZXIiLCJjbGF2ZSI6ImJhcm1hbjEwIiwiaWQiOjUsInRpcG8iOiJiYXJ0ZW5kZXIifQ.uWp2wgOfPJloevvCPXK0M0C0kjymW5ngZu6qB4C7W1c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/pedidos/preparacion",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"pedidos",
+								"preparacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Pedidos Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/practicaComanda/public/pedidos/?idMesa=R2H89&idPedido=1BFA9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"practicaComanda",
+								"public",
+								"pedidos",
+								""
+							],
+							"query": [
+								{
+									"key": "idMesa",
+									"value": "R2H89"
+								},
+								{
+									"key": "idPedido",
+									"value": "1BFA9"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Mesa",
+			"item": [
+				{
+					"name": "Servir Mesas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhbGZyZWQiLCJjbGF2ZSI6Im1vem9tYWVzdHJvIiwiaWQiOjcsInRpcG8iOiJtb3pvIn0.Zyx3RAdXL5-a3kaLPPzytlPbwwKzLN07hB-ZgNKQ3RY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/mesas/BDPEK",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"mesas",
+								"BDPEK"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cerrar Mesa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJzb2NpbzEiLCJjbGF2ZSI6InNvY2lvMWFkbWluIiwiaWQiOjEsInRpcG8iOiJzb2NpbyJ9.6uUsHf7iRCeBQ2Xh-FX0hDZH5T_MJqfH-xCH0ypABIo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idMesa",
+									"value": "BDPEK",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/mesas/cerrar",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"mesas",
+								"cerrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar estado",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhbGZyZWQiLCJjbGF2ZSI6Im1vem9tYWVzdHJvIiwiaWQiOjcsInRpcG8iOiJtb3pvIn0.Zyx3RAdXL5-a3kaLPPzytlPbwwKzLN07hB-ZgNKQ3RY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://tpcomandabrianpavon.000webhostapp.com/public/mesas/BDPEK",
+							"protocol": "https",
+							"host": [
+								"tpcomandabrianpavon",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"public",
+								"mesas",
+								"BDPEK"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
